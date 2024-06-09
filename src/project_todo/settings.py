@@ -29,7 +29,10 @@ DEBUG = env.bool("DEBUG")
 
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
-
+print(SECRET_KEY)
+print(DEBUG)
+print(type(DEBUG))
+print(ALLOWED_HOSTS)
 # Application definition
 
 INSTALLED_APPS = [
@@ -57,7 +60,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "https://127.0.0.1:8000",
-    "https://localhost:8000"
+    "https://localhost:8000",
     "https://localhost:3000"
 ]
 ROOT_URLCONF = 'project_todo.urls'
