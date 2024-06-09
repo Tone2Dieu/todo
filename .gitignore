@@ -1,0 +1,4 @@
+.env_todo
+.idea
+.env
+db.sqlite3
